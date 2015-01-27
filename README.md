@@ -17,5 +17,6 @@ Description
 You may also explore the rest material in my Github if you are interest to. However, some of the code might be incomplete.
 
 If there is any questions, you are welcomed to contact me:
+
 		Email: junxing.li.cn@gmail.com
 		Phone: +86 135 2738 4469
