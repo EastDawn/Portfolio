@@ -1,22 +1,23 @@
-# Portfolio
-Description
+# Work Experience
 
-· This online package contains the portfolio for 2015 HCI Graduate Program Application
+2015.01 - Current	User Experience Architect Intern, ChasingTimes Inc, Beijing, China
 
-· Each work has its own description, illustrating more details about each one separately
-
-· The portfolio contains but not limited to the following works:
-
-	→ a writing sample
-	→ a program code sample from class in college
-	→ a description of works during internship
-	→ a link to the article I published
-	→ any scanned copy of certificates required or mentioned in other application material
+→ Product designer, user experience designer, front end/back end software architecture designer of Meetin app
+→ Meetin payment process design including Ali Pay API and Wechat Pay API
 
 
-You may also explore the rest material in my Github if you are interest to. However, some of the code might be incomplete.
+2013.07 - 2013.09	User Experience Intern, Renren Inc, Beijing, China
 
-Should you have any questions, you are welcomed to contact me:
+→ Concentrated on improving the user experience of mobile apps
+→ Created Moving LBS Group, a new SMS function based on the LBS group, established a
+	new dimension to chat, to make new friends, to enjoy your interests
+→ Designed Push Notification Strategy for multi-device logins
+→ Designed Feed Card Interaction for landscape mode
+→ Created Feed Stream Organization Algorithm
+→ Designed Image Publisher Logic and Interaction
 
+
+
+You are welcomed to contact me for more details:
 		Email: junxing.li.cn@gmail.com
 		Phone: +86 135 2738 4469
