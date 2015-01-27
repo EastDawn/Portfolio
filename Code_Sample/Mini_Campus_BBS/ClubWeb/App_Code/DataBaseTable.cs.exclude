@@ -1,0 +1,95 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+/// <summary>
+///DataBaseTable 的摘要说明
+/// </summary>
+public class DataBaseTable
+{
+	public DataBaseTable()
+	{
+		//
+		//TODO: 在此处添加构造函数逻辑
+		//
+	}
+}
+
+
+/// <summary>
+/// 表项类定义，用来在每个页面保存访问数据库对应表项的内容
+/// </summary> 
+public class TableUser
+{
+    public string userid;
+    public string username;
+    public string password;
+    public bool identification;
+    public bool userstatus;
+
+    /*public TableUser()
+    {
+        this.userid = "";
+        this.username = "";
+        this.password = "";
+        this.identification = false;
+        this.userstatus = false;
+    }*/
+}
+
+public class TableStudentReference
+{
+    public string studentid;
+    public string studentname;
+
+    /*public TableStudentReference()
+    {
+        this.studentid = "";
+        this.studentname = "";
+    }*/
+}
+
+public class TableFeed
+{
+    public int feedid;
+    public string feedtitle;
+    public string feedtext;
+    public string posterid;
+    public DateTime posttime;
+    public string imageid;
+    public bool imagestatus;
+    public bool feedstatus;
+
+    /*public TableFeed()
+    {
+        this.feedid = -1;
+        this.feedtitle = "";
+        this.feedtext = "";
+        this.posterid = "";
+        this.posttime = System.DateTime.Now;//获取系统时间
+        this.imageid = "";
+        this.imagestatus = false;
+        this.feedstatus = false;
+    }*/
+}
+
+public class TableCommont
+{
+    public int feedid;
+    public int commentnumber;
+    public string commenttext;
+    public string commenterid;
+    public DateTime commenttime;
+    public bool commentstatus;
+
+    /*public TableCommont()
+    {
+        this.feedid = -1;
+        this.commentnumber = -1;
+        this.commenttext = "";
+        this.commenterid = "";
+        this.commenttime = System.DateTime.Now;//获取系统时间
+        this.commentstatus = false;
+    }*/
+}

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ClubWebDB" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SA;AttachDbFilename=|DataDirectory|\ClubWebDB.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ClubWebDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Comment" Member="Comment">
+    <Type Name="Comment">
+      <Column Name="FeedID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CommentNumber" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CommentText" Type="System.String" DbType="VarChar(120) NOT NULL" CanBeNull="false" />
+      <Column Name="CommenterID" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CommentTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CommentStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Feed_Comment" Member="Feed" ThisKey="FeedID" OtherKey="FeedID" Type="Feed" IsForeignKey="true" />
+      <Association Name="User_Comment" Member="User" ThisKey="CommenterID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Feed" Member="Feed">
+    <Type Name="Feed">
+      <Column Name="FeedID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FeedText" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="PosterID" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PostTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ImageID" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="FeedStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ImageStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Feed_Comment" Member="Comment" ThisKey="FeedID" OtherKey="FeedID" Type="Comment" />
+      <Association Name="User_Feed" Member="User" ThisKey="PosterID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StudentReference" Member="StudentReference">
+    <Type Name="StudentReference">
+      <Column Name="StudentID" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StudentName" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="StudentReference_User" Member="User" ThisKey="StudentID" OtherKey="UserID" Type="User" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="User">
+    <Type Name="User">
+      <Column Name="UserID" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="Identification" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="UserStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="User_Comment" Member="Comment" ThisKey="UserID" OtherKey="CommenterID" Type="Comment" />
+      <Association Name="User_Feed" Member="Feed" ThisKey="UserID" OtherKey="PosterID" Type="Feed" />
+      <Association Name="StudentReference_User" Member="StudentReference" ThisKey="UserID" OtherKey="StudentID" Type="StudentReference" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
