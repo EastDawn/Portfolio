@@ -7,11 +7,12 @@ Description
 
 · The portfolio contains but not limited to the following works:
 
-	→ a writing sample
-	→ a program code sample from class in college
-	→ a description of works during internship
 	→ a link to the article I published
-	→ any scanned copy of certificates required or mentioned in other application material
+	→ a recent CV
+	→ supplemental materials (Transcript, Grade Explanation)
+	→ a description of works during internship
+	→ a package of work samples
+	→ a writing sample
 
 
 You may also explore the rest material in my Github if you are interest to. However, some of the code might be incomplete.
