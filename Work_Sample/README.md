@@ -19,7 +19,7 @@ Description
         → It is a package of three little projects I developed independently earlier.
         → 1. A Windows console based app developed in C++: Bus Rolling System
         → 2. A Windows console based app developed in C: Dummy Text Editor
-        → 3. A website developed in C#
+        → 3. A website developed in C#: Mini-Campus BBS
 
 
 
