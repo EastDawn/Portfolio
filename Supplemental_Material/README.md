@@ -6,4 +6,4 @@ Some of the materials have privite informations such as Name, ID, etc. For secur
 Should you have any questions, you are welcomed to contact me:
 
 		Email: junxing.li.cn@gmail.com
-		Phone: +86 135 2738 4469
+		Phone: +1 (765) 586-2295
