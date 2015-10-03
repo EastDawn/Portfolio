@@ -20,4 +20,4 @@
 You are welcomed to contact me for more details:
 
 		Email: junxing.li.cn@gmail.com
-		Phone: +86 135 2738 4469
+		Phone: +1 (765) 586-2295
